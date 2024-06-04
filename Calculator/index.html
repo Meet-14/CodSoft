@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table class="calculator" align="center">
+        <tr>
+            <td colspan="4" id="ans"></td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="ac" onclick="clearAns()" id="btn" class="btn-red"> </td>
+            <td> <input type="button" value="←" onclick="backAns()" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="%" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="+" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="8" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="9" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="-" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="5" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="6" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="*" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="1" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="2" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="3" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="/" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="0" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="." onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="00" onclick="addNo(this.value)" id="btn" class="btn-blue"> </td>
+            <td> <input type="button" value="=" onclick="displayAns()" id="btn" class="btn-blue"> </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+
+</body>
+</html>
